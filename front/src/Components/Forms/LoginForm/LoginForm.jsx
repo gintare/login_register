@@ -27,7 +27,7 @@ const LoginForm = () => {
     try {
       const response = await loginPost(data);
       localStorage.setItem('token', response.token);
-      localStorage.setItem('user', JSON.stringify(response));
+      //localStorage.setItem('user', JSON.stringify(response));
       reset();
       navigate('/recipes');
       toast.success('Login successfull!');
